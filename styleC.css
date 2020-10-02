@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 60px;
+	line-height: 1.2;
+    margin-bottom: 130px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.positionir{
+	height: 780px;
+	background: url(house1.jpg) no-repeat center center fixed; 
+    background-size: cover;
+}
+.showcase {
+	height: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+}
+.content {
+	z-index: 2;
+}
+
+#Contact {
+	padding: 10px;
+    text-align: center;
+    color: rgb(184, 73, 0);
+    background-image: url(Painting.jpg);
+    background-size: cover;
+}
+#sendMail {
+	display: inline-block;
+	padding: 10px 30px;
+	background: var(--primary-color);
+	color: #fff;
+	border-radius: 5px;
+	border: solid #fff 1px;
+	margin-top: 25px;
+    opacity: 0.7;
+}
+#sendMail:hover {
+	transform: scale(0.98);
+}
+#sendMail:hover {
+    background-color: orangered;
+}
+#mailForm p {
+    font-size: 1.2rem;
+	max-width: 600px;
+    margin: auto;
+    text-align:center;
+	background-image: linear-gradient(-90deg, rgb(157, 205, 228), rgb(22, 147, 163));
+    color: #fff;
+    padding: 30px;
+    box-shadow: 0 12px 10px 0 rgb(0, 0, 0), 0 17px 20px 0 rgb(0, 0, 0);
+    opacity: 0.9;
+}
+#email {
+    width: 350px;
+    height: 30px;
+    padding: 5px;
+    background-image: linear-gradient(-90deg, #333, rgb(27, 27, 27));
+    color: #fff;
+    font-size: 18px;
+}
+#name {
+    width: 350px;
+    height: 30px;
+    padding: 5px;
+    background-image: linear-gradient(-90deg, #333, rgb(27, 27, 27));
+    color: #fff;
+    font-size: 18px;
+}
+#phone {
+    width: 350px;
+    height: 30px;
+    padding: 5px;
+    background-image: linear-gradient(-90deg, #333, rgb(27, 27, 27));
+    color: #fff;
+    font-size: 18px;
+}
+#message {
+    width: 350px;
+    height: 200px;
+    padding: 5px;
+    background-image: linear-gradient(-90deg, #333, rgb(27, 27, 27));
+    color: #fff;
+    font-size: 20px;
+}
+#errorMess {
+    font-size: 28px;
+    font-weight: bold;
+    color: red;
+}
+.section-c {
+    text-align: center;
+	background-image: linear-gradient(-150deg, #333, rgb(27, 27, 27));
+    color: #fff;
+    padding: 20px;
+}
+.h1Sector {
+    font-weight: 300;
+	font-size: 60px;
+	line-height: 1.2;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.h1Sector1 {
+    font-weight: 300;
+	font-size: 30px;
+	line-height: 1.2;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#navbar {
+	overflow: hidden;
+	background-color: #f1f1f1;
+	padding: 10px 8px;
+	transition: 0.4s;
+	position: fixed; 
+	width: 100%;
+	top: 0; 
+	z-index: 99;
+	background-image: linear-gradient(-90deg, black, rgb(209, 66, 0));
+	opacity: 0.65;
+  }
+  #navbar #logo {
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.4s;
+    letter-spacing: 2px;
+    color: lightgray;
+  }
+  #logo {
+    padding: 15px;
+  }
+nav ul {
+    float: right;
+    margin-right: 80px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a {
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a:hover {
+    background-color: orangered;
+    transition: .5s;
+}
+.checkbtn {
+    font-size: 30px; 
+    color: aliceblue;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+.section-right {
+    text-align: center;
+    max-width: 770px;
+    float: right;
+    padding-right: 120px;
+}
+.section-a {
+    text-align: center;
+    padding-left: 10px;
+    max-width: 770px;
+    float: left;
+    padding-left: 60px;
+  }
+
+@media (max-width: 800px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 50%;
+        height: 60vh;
+        background-image: linear-gradient(-90deg, rgb(56, 13, 2), rgb(209, 66, 0));
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    a:hover,a.active {
+        background: none;
+        background-color: orangered;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+    .h1-main {
+	    font-size: 35px;
+        text-align: center;
+        margin-bottom: 200px;
+        color: rgb(255, 255, 255);
+        font-style: oblique;
+    }  
+    #email{
+        width: 250px;
+        height: 30px;
+        padding: 5px;
+        background-image: linear-gradient(-90deg, #333, rgb(27, 27, 27));
+        color: #fff;
+        font-size: 18px;
+    }
+    #name{
+        width: 250px;
+        height: 30px;
+        padding: 5px;
+        background-image: linear-gradient(-90deg, #333, rgb(27, 27, 27));
+        color: #fff;
+        font-size: 18px;
+    }
+    #phone{
+        width: 250px;
+        height: 30px;
+        padding: 5px;
+        background-image: linear-gradient(-90deg, #333, rgb(27, 27, 27));
+        color: #fff;
+        font-size: 18px;
+    }
+    #message{
+        width: 250px;
+        height: 200px;
+        padding: 5px;
+        background-image: linear-gradient(-90deg, #333, rgb(27, 27, 27));
+        color: #fff;
+        font-size: 20px;
+    }
+    #password {
+        width: 350px;
+        height: 30px;
+        padding: 5px;
+        background-image: linear-gradient(-90deg, #333, rgb(27, 27, 27));
+        color: #fff;
+        font-size: 20px;
+    }
+    .container-a .section-a .menu {
+        text-align: center;
+        max-width: 960px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: auto;
+    }
+    .container-right .section-right .address {
+        text-align: center;
+        max-width: 960px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: auto;
+    }
+}
+.address span , .menu span{
+    color: rgb(0, 0, 0); 
+    font-weight: bold; 
+    border-bottom: 2px solid #c7c7c7; 
+    padding: 5px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 3px;  
+ }
+ .address li a , .menu li a{
+     color:rgb(0, 0, 0);
+     letter-spacing: 3px;
+     text-decoration:none;
+     font-size:14px;
+ }
+ .address li, .menu li{
+     margin:10px 0px;
+     list-style: none;
+ }
+ .address .fa{
+     color: orangered;
+     margin-right: 10px;
+     font-size:18px;
+ }
+
+  
+
